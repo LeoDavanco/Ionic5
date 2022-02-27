@@ -71,6 +71,22 @@ const routes: Routes = [
     path: 'list',
     loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
   },
+  {
+    path: 'animacao',
+    loadChildren: () => import('./pages/animacao/animacao.module').then( m => m.AnimacaoPageModule)
+  },
+  {
+    path: 'componentes-visuais',
+    loadChildren: () => import('./pages/componentes-visuais/componentes-visuais.module').then( m => m.ComponentesVisuaisPageModule)
+  },
+  {
+    path: 'componentes-nativos',
+    loadChildren: () => import('./pages/componentes-nativos/componentes-nativos.module').then( m => m.ComponentesNativosPageModule)
+  },
+  {
+    path: 'camera',
+    loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
+  },
 
 ];
 
